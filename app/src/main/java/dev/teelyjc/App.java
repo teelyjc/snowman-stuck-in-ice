@@ -138,32 +138,32 @@ public class App extends JFrame {
             "Left",
             new Vector3f(-0.8f, 0, 0),
             new Box(0.05f, 0.8f, 0.8f,
-                ShapePositionManager.createAppeareance(Colors.SkyBlue, true))),
+                ShapePositionManager.createAppeareance(Colors.SkyBlue, true, true, Colors.SkyBlue, 64))),
         new ShapePosition(
             "Back",
             new Vector3f(0, 0.8f, 0),
             new Box(0.8f, 0.05f, 0.8f,
-                ShapePositionManager.createAppeareance(Colors.SkyBlue, true))),
+                ShapePositionManager.createAppeareance(Colors.SkyBlue, true, true, Colors.SkyBlue, 64))),
         new ShapePosition(
             "Right",
             new Vector3f(0.8f, 0, 0),
             new Box(0.05f, 0.8f, 0.8f,
-                ShapePositionManager.createAppeareance(Colors.SkyBlue, true))),
+                ShapePositionManager.createAppeareance(Colors.SkyBlue, true, true, Colors.SkyBlue, 64))),
         new ShapePosition(
             "Front",
             new Vector3f(0, -0.8f, 0),
             new Box(0.8f, 0.05f, 0.8f,
-                ShapePositionManager.createAppeareance(Colors.SkyBlue, true))),
+                ShapePositionManager.createAppeareance(Colors.SkyBlue, true, true, Colors.SkyBlue, 64))),
         new ShapePosition(
             "Floor",
             new Vector3f(0, 0, -0.8f),
             new Box(0.8f, 0.8f, 0.05f,
-                ShapePositionManager.createAppeareance(Colors.SkyBlue, true))),
+                ShapePositionManager.createAppeareance(Colors.SkyBlue, true, true, Colors.SkyBlue, 64))),
         new ShapePosition(
             "Ceiling",
             new Vector3f(0, 0, 0.8f),
             new Box(0.8f, 0.8f, 0.05f,
-                ShapePositionManager.createAppeareance(Colors.SkyBlue, true))),
+                ShapePositionManager.createAppeareance(Colors.SkyBlue, true, true, Colors.SkyBlue, 64))),
     };
 
     ShapePositionManager spm = new ShapePositionManager("Wall", shapePositions);
@@ -178,42 +178,42 @@ public class App extends JFrame {
         new ShapePosition("Root",
             new Vector3f(0, 0, 0.2f),
             new Box(0.12f, 0.12f, 0.8f,
-                ShapePositionManager.createAppeareance(Colors.Brown, false))),
+                ShapePositionManager.createAppeareance(Colors.Brown, false, false, Colors.Brown, 64))),
         new ShapePosition(
             "Leaves 1",
             new Vector3f(0.3f, 0, 1.0f),
             new Sphere(0.55f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 2",
             new Vector3f(-0.3f, 0, 1.0f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 3",
             new Vector3f(0.15f, 0.25f, 1.2f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 4",
             new Vector3f(0.15f, 0.125f, 1.25f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 5",
             new Vector3f(0.25f, -0.15f, 1.4f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 6",
             new Vector3f(0.35f, -0.3f, 1.25f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 7",
             new Vector3f(0, 0, 0.8f),
             new Sphere(0.45f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
     };
 
     ShapePositionManager spm = new ShapePositionManager("Tree", shapePositions);
@@ -230,42 +230,42 @@ public class App extends JFrame {
         new ShapePosition("Root",
             new Vector3f(0, 0, 0.2f),
             new Box(0.12f, 0.12f, 0.8f,
-                ShapePositionManager.createAppeareance(Colors.Brown, false))),
+                ShapePositionManager.createAppeareance(Colors.Brown, false, true, Colors.Brown, 64))),
         new ShapePosition(
             "Leaves 1",
             new Vector3f(-0.3f, 0, 1.0f),
             new Sphere(0.55f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 2",
             new Vector3f(0.3f, 0, 1.0f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 3",
             new Vector3f(-0.15f, 0.25f, 1.2f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 4",
             new Vector3f(-0.15f, 0.125f, 1.25f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 5",
             new Vector3f(-0.25f, -0.15f, 1.4f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 6",
             new Vector3f(-0.35f, -0.3f, 1.25f),
             new Sphere(0.35f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
         new ShapePosition(
             "Leaves 7",
             new Vector3f(0, 0, 0.8f),
             new Sphere(0.45f,
-                ShapePositionManager.createAppeareance(Colors.Green, false))),
+                ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64))),
     };
 
     ShapePositionManager spm = new ShapePositionManager("Tree 2", shapePositions);
@@ -279,31 +279,31 @@ public class App extends JFrame {
         new ShapePosition(
             "Head",
             new Vector3f(0, 0, 0.25f),
-            new Sphere(0.2f, 0, ShapePositionManager.createAppeareance(Colors.White, false))),
+            new Sphere(0.2f, 0, ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Body",
             new Vector3f(0, 0, -0.25f),
-            new Sphere(0.4f, 0, ShapePositionManager.createAppeareance(Colors.White, false))),
+            new Sphere(0.4f, 0, ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Left Eye",
             new Vector3f(0.125f, -0.12f, 0.35f),
-            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false))),
+            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.White, 64))),
         new ShapePosition(
             "Right Eye",
             new Vector3f(0.125f, 0.12f, 0.35f),
-            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false))),
+            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.White, 64))),
         new ShapePosition(
             "Buttons 0",
             new Vector3f(0.345f, 0, -0.05f),
-            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false))),
+            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.White, 64))),
         new ShapePosition(
             "Buttons 1",
             new Vector3f(0.4f, 0, -0.25f),
-            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false))),
+            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.White, 64))),
         new ShapePosition(
             "Buttons 2",
             new Vector3f(0.345f, 0, -0.45f),
-            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false)))
+            new Sphere(0.035f, 0, ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.White, 64)))
     };
 
     ShapePositionManager spm = new ShapePositionManager("Human", shapePositions);
@@ -315,7 +315,7 @@ public class App extends JFrame {
         new ShapePosition(
             "Platform",
             new Vector3f(0, 0, -0.9f),
-            new Box(2, 2, 0.1f, ShapePositionManager.createAppeareance(Colors.Green, false)))
+            new Box(2, 2, 0.1f, ShapePositionManager.createAppeareance(Colors.Green, false, true, Colors.Green, 64)))
     };
 
     ShapePositionManager spm = new ShapePositionManager("Platform", shapePositions);
@@ -328,82 +328,82 @@ public class App extends JFrame {
             "Road",
             new Vector3f(1.5f, 0, -0.8f),
             new Box(0.4f, 2f, 0.02f,
-                ShapePositionManager.createAppeareance(Colors.Black, false))),
+                ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.Black, 64))),
         new ShapePosition(
             "Road Scratch 1",
             new Vector3f(1.5f, -0.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Road Scratch 2",
             new Vector3f(1.5f, -1.0f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Road Scratch 3",
             new Vector3f(1.5f, -1.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Road Scratch 4",
             new Vector3f(1.5f, 0, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Road Scratch 5",
             new Vector3f(1.5f, 0.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Road Scratch 6",
             new Vector3f(1.5f, 1.0f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Road Scratch 7",
             new Vector3f(1.5f, 1.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road",
             new Vector3f(-1.5f, 0, -0.8f),
             new Box(0.4f, 2f, 0.02f,
-                ShapePositionManager.createAppeareance(Colors.Black, false))),
+                ShapePositionManager.createAppeareance(Colors.Black, false, true, Colors.Black, 64))),
         new ShapePosition(
             "Back Road Scratch 1",
             new Vector3f(-1.5f, -0.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road Scratch 2",
             new Vector3f(-1.5f, -1.0f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road Scratch 3",
             new Vector3f(-1.5f, -1.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road Scratch 4",
             new Vector3f(-1.5f, 0, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road Scratch 5",
             new Vector3f(-1.5f, 0.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road Scratch 6",
             new Vector3f(-1.5f, 1.0f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false))),
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64))),
         new ShapePosition(
             "Back Road Scratch 7",
             new Vector3f(-1.5f, 1.5f, -0.8f),
             new Box(0.02f, 0.08f, 0.03f,
-                ShapePositionManager.createAppeareance(Colors.White, false)))
+                ShapePositionManager.createAppeareance(Colors.White, false, true, Colors.White, 64)))
     };
 
     ShapePositionManager spm = new ShapePositionManager("Road", shapePositions);
