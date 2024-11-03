@@ -32,6 +32,11 @@ public class ShapePositionManager {
     return new TransformGroup(transform);
   }
 
+  /**
+   * @implNote ใช้สำหรับสร้าง Appeareance
+   * @param c
+   * @return
+   */
   public static Appearance createAppeareance(Color3f c) {
     Appearance appearance = new Appearance();
     if (c != null) {
@@ -42,6 +47,13 @@ public class ShapePositionManager {
     return appearance;
   }
 
+  /**
+   * @implNote ใช้สำหรับสร้าง Appeareance โดยเป็น Overloading สำหรับการทำ
+   *           Transparency
+   * @param c
+   * @param isTransparency
+   * @return
+   */
   public static Appearance createAppeareance(Color3f c, Boolean isTransparency) {
     Appearance appearance = new Appearance();
     if (c != null) {
@@ -57,6 +69,16 @@ public class ShapePositionManager {
     return appearance;
   }
 
+  /**
+   * @implNote ใช้สำหรับสร้าง Appeareance แต่ละ instance สำหรับการเพิ่มแสงและเงา
+   *           Material
+   * @param c
+   * @param isTransparency
+   * @param isLightOn
+   * @param specular
+   * @param shine
+   * @return
+   */
   public static Appearance createAppeareance(
       Color3f c,
       Boolean isTransparency,
@@ -89,6 +111,11 @@ public class ShapePositionManager {
   private final String name;
   private final ShapePosition[] shapePositions;
 
+  /**
+   * @implNote ใช้สำหรับจัดการ Primitive หลายๆชิ้น
+   * @param name
+   * @param shapePositions
+   */
   public ShapePositionManager(String name, ShapePosition[] shapePositions) {
     this.name = name;
     this.shapePositions = shapePositions;
@@ -98,6 +125,10 @@ public class ShapePositionManager {
     return this.name;
   }
 
+  /**
+   * @implNote ใช้สำหรับ inject transform แต่ละตัว เข้าไปที่ TransformGroup
+   * @param tg
+   */
   public void inject(TransformGroup tg) {
     for (ShapePosition sp : this.shapePositions) {
       Vector3f v = sp.getVector3f();

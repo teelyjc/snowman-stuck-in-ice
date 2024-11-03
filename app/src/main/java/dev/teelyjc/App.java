@@ -29,6 +29,10 @@ import com.sun.j3d.utils.universe.SimpleUniverse;
 import dev.teelyjc.constants.Colors;
 import dev.teelyjc.domains.ShapePosition;
 
+/**
+ * @implNote Project ตั้งต้นใช้ Gradle เป็น Build Tools สามารถดูได้ที่ Github
+ *           ของผู้จัดทำ https://github.com/teelyjc/snowman-stuck-in-ice
+ */
 public class App extends JFrame {
   public static void main(String[] args) {
     EventQueue.invokeLater(() -> {
@@ -79,6 +83,7 @@ public class App extends JFrame {
   private Background getBackgroundColor() {
     Background background = new Background();
 
+    // กำหนดสีของ Background
     background.setColor(Colors.Gray);
     background.setApplicationBounds(new BoundingSphere());
 
@@ -91,11 +96,20 @@ public class App extends JFrame {
     tg.setCapability(TransformGroup.ALLOW_TRANSFORM_READ);
     tg.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);
 
+    /** TransformGroup สำหรับพื้น 1 ชิ้น */
     this.applyTransformGroupForPlatform(tg);
+
+    /** TransformGroup สำหรับตัว Snowman ที่อยู๋ในน้ำแข็ง */
     this.applyTransformForSnowMan(tg);
+
+    /** TransformGroup สำหรับก้อนน้ำแข็ง */
     this.applyTransformGroupForWalls(tg);
+
+    /** TransformGroup สำหรับต้นไม้ ทั้ง 2 ต้น */
     this.applyTransformGroupForTree(tg);
     this.applyTransformGroupForTree2(tg);
+
+    /** TransformGroup สำหรับถนนทั้ง 2 เส้น */
     this.applyTransformForRoad(tg);
 
     return tg;
@@ -105,12 +119,14 @@ public class App extends JFrame {
     BoundingSphere bs = new BoundingSphere(
         new Point3d(0, 0, 0), 1000);
 
+    // ประกาศ MouseBehavior ทั้งหมดเก็บไว้ใน Array
     MouseBehavior[] mbs = {
         new MouseTranslate(),
         new MouseZoom(),
         new MouseRotate(),
     };
 
+    // Foreach Loop สำหรับ Mouse Behavior แต่ละตัวมาใส่ Transform
     for (MouseBehavior mb : mbs) {
       mb.setTransformGroup(tg);
       mb.setSchedulingBounds(bs);

@@ -2,6 +2,10 @@ package dev.teelyjc.constants;
 
 import javax.vecmath.Color3f;
 
+/**
+ * เป็น Class ที่ไว้จัดการสำหรับ Color3f ที่
+ * อาจารย์ได้ประกาศไว้ให้สำหรับใช้ในการกำหนด Appeareance
+ */
 public class Colors {
   public static Color3f White = new Color3f(1.0f, 1.0f, 1.0f);
 

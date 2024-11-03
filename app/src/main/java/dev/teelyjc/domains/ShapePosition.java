@@ -4,6 +4,10 @@ import javax.vecmath.Vector3f;
 
 import com.sun.j3d.utils.geometry.Primitive;
 
+/**
+ * @implNote เป็น Class ที่รวบรวม (Grouping primitives)
+ *           เข้าด้วยกันเพื่อให้ง่ายต่อการจัดวางวัตถุ
+ */
 public class ShapePosition {
   private final String name;
   private final Vector3f v;
